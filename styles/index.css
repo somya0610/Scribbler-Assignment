@@ -9,3 +9,24 @@ body {
     background-size: 100% 100%;
     margin: 0;
 }
+
+.div-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+
+}
+
+.post-buttons {
+    background-color: #d1b63d;
+    width: 125px;
+    margin: 10px 11px 5px 10px;
+    padding: 10px;
+    font-size: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    border-width: 3px;
+    border-color: #dcdad3;
+    font-size: 16px;
+}

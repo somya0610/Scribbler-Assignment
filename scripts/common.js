@@ -80,11 +80,13 @@ var signUpAnchor = document.getElementById('sign-up-anchor'); // Get the anchor 
 
 // On clicking Sign Up button, Sign Up modal appears on the screen
 signUpButton.onclick = function () {
+    this.blur();
     signUpModal.style.display = "block";
 }
 
 // On clicking Sign In button, Sign In modal appears on the screen
 signInButton.onclick = function () {
+    this.blur();
     signInModal.style.display = "block";
 }
 
