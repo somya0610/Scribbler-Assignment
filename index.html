@@ -25,8 +25,29 @@
     <!-- Body Content starts here -->
     <div class="div-content">
         <button class="post-buttons" onclick="goToPostsListPage()">All Posts</button>
-        <button class="post-buttons">Create Post</button>
+        <button class="post-buttons" id="create-post">Create Post</button>
     </div>
+
+    <!-- Modal for Create Post starts here -->
+    <div id="create-post-modal" class="modal">
+        <div class="modal-content" id="modal-content-body">
+            <div class="modal-header">
+                <p>Pen Your Post</p>
+                <span class="modal-close"><i class="fa fa-times" aria-hidden="true"></i></span>
+            </div>
+            <hr>
+            <form>
+                <label for="title">Title</label>
+                <input type="text" id="title" placeholder="Enter title of your post">
+                <label for="content">Contents</label>
+                <textarea id="content" rows="22" placeholder="Enter the contents of your post"></textarea>
+                <div class="div-content">
+                    <button class="modal-button" id="modal-button-boby">Create</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Modal for Create Post ends here -->
     <!-- Body Content ends here -->
 
     <!-- JavaScript included here -->

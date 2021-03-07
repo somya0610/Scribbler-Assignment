@@ -30,3 +30,26 @@ body {
     border-color: #dcdad3;
     font-size: 16px;
 }
+
+#modal-content-body {
+    width: 81.5%;
+}
+
+textarea {
+    padding: 12px 10px;
+    border: none;
+    background: #f1f1f1;
+    margin-bottom: 10px;
+}
+
+textarea:focus {
+    border: .5px solid #4f8afb;
+    box-shadow: 0 0 1.5px #4691cf;
+    outline-offset: 0px;
+    outline: none;
+}
+
+#modal-button-boby {
+    width: 125px;
+    padding: 10px 20px;
+}
