@@ -30,3 +30,93 @@ header {
     border-color: #dddddd;
     border-width: 3px;
 }
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.modal-header {
+    color: #757575;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+.modal-close {
+    float: right;
+    cursor: pointer;
+}   
+
+.fa-times {
+    -webkit-text-stroke: 1px white;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+hr {
+    margin: 8px 0 2px 0;
+    border: none;
+    border-bottom: 1.5px solid grey;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+    padding: 12px 10px;
+    border: none;
+    background: #f1f1f1;
+    margin-bottom: 10px;
+}
+
+input:focus {
+    border: .5px solid #4f8afb;
+    box-shadow: 0 0 1.5px #4691cf;
+    outline-offset: 0px;
+    outline: none;
+}
+
+label {
+    padding: 10px 0 10px 0;
+    color: #1b1b1b;
+}
+
+.modal-button {
+    background-color: green;
+    color: white;
+    font-size: 15px;
+    margin-top: 17px;
+    margin-bottom: 8px;
+    border: none;
+    padding: 14px 20px;
+    width: 100%;
+    opacity: 0.6;
+}
