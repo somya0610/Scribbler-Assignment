@@ -67,3 +67,11 @@ body {
     outline-offset: 0px;
     outline: none;
 }
+
+#like-text {
+    margin: 10px 0 10px 0;
+    font-size: 10px;
+    font-weight: 900;
+    color: #555454;
+    font-family: 'Roboto Mono', monospace;
+}

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ScriBBler - Post</title>
     <!-- Included Google Fonts file -->
-    <link href="https://fonts.googleapis.com/css2?family=Montez&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montez&family=Roboto+Mono:wght@200&family=Ubuntu+Mono&display=swap" rel="stylesheet">
     <!-- Included Font Awesome file -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Included style sheets -->
@@ -33,6 +33,12 @@
                     aria-hidden="true"></i></button>
         </div>
         <p class="content" id='post-content' contenteditable="false"></p>
+
+        <!-- Like button details starts here -->
+        <button class="post-button" onclick="this.blur(); likePost()"><i class="fa fa-thumbs-up" aria-hidden="true"></i>
+            Like</button>
+        <p id="like-text">Be the first one to like this!</p>
+        <!-- Like button details ends here -->
     </div>
     <!-- Post Details ends here -->
 

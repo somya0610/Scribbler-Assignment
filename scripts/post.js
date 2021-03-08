@@ -33,3 +33,15 @@ function changeContentEditable() {
         isSave = true;
     }
 }
+
+/** When the Like button is clicked, update the button value and the like text related to it. */
+var likeCount = 0;
+function likePost() {
+    likeCount++;
+    document.getElementsByClassName('post-button')[2].innerHTML = '<i class="fa fa-thumbs-up" aria-hidden="true"></i> Liked!';
+    if (likeCount === 1) {
+        document.getElementById('like-text').innerHTML = likeCount + ' person likes this!';
+    } else {
+        document.getElementById('like-text').innerHTML = likeCount + ' people like this!';
+    }
+}
