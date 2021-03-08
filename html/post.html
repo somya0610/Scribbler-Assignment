@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ScriBBler - Post</title>
     <!-- Included Google Fonts file -->
-    <link href="https://fonts.googleapis.com/css2?family=Montez&family=Roboto+Mono:wght@200&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montez&family=Roboto+Mono:wght@200&family=Ubuntu+Mono&display=swap"
+        rel="stylesheet">
     <!-- Included Font Awesome file -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Included style sheets -->
@@ -18,7 +20,7 @@
 <body>
     <!-- Header starts here-->
     <header>
-        
+
     </header>
     <!-- Header ends here-->
 
@@ -39,6 +41,18 @@
             Like</button>
         <p id="like-text">Be the first one to like this!</p>
         <!-- Like button details ends here -->
+
+        <!-- Comment Section starts here -->
+        <div class="comment-area">
+            <textarea id="comment-box" placeholder="Leave a comment..." rows="5"></textarea>
+            <button class="post-button" id="comment-btn"
+                onclick="this.blur(); addComment('comment-box')">Comment</button>
+            <h4>All Comments</h4>
+            <div id="comments" class="all-comments">
+
+            </div>
+        </div>
+        <!-- Comment Section ends here -->
     </div>
     <!-- Post Details ends here -->
 

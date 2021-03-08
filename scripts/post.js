@@ -45,3 +45,25 @@ function likePost() {
         document.getElementById('like-text').innerHTML = likeCount + ' people like this!';
     }
 }
+
+/** When a comment is not empty and Comment button is clicked, it is added in the comment section.
+ *  Latest comment appear on the top */
+var isFirstComment = true;
+function addComment(commentId) {
+    var comment = document.getElementById(commentId).value;
+    if (comment) {
+        var pElement = document.createElement('p');
+        pElement.classList.add('content');
+        pElement.classList.add('comment');
+        pElement.innerHTML = comment;
+        var currComments = document.getElementById('comments');
+        if (isFirstComment) {
+            currComments.style.paddingTop = '12px';
+            currComments.style.paddingBottom = '12px';
+            isFirstComment = false;
+        }
+        currComments.prepend(pElement);
+        // Setting the comment to blank once added to div
+        document.getElementById(commentId).value = ''
+    }
+}
