@@ -9,3 +9,61 @@ body {
 .subheading {
     color: #7d09a0;
 }
+
+.post {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 40px;
+}
+
+#post-title {
+    text-align: center;
+    border: solid white;
+    margin: 18px 0 16px 0;
+}
+
+.div-posted-by {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12px;
+}
+
+#posted-by {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.post-button {
+    background-color: #ec1254;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    -webkit-box-shadow: 0 9px 6px -6px rgb(236, 18, 84, 0.5);
+    -moz-box-shadow: 0 9px 6px -6px rgb(236, 18, 84, 0.5);
+    box-shadow: 0 9px 6px -6px rgb(236, 18, 84, 0.5);
+    font-size: 12px;
+}
+
+#save-btn {
+    display: none;
+}
+
+.fa-edit, .fa-floppy-o {
+    font-weight: bold;
+    padding-left: 3px;
+}
+
+.content {
+    text-align: justify;
+    margin-bottom: 15px;
+    font-family: 'Roboto';
+    font-size: 15px;
+    border: solid white;
+}
+
+#post-title:focus, #post-content:focus {
+    border: solid pink;
+    outline-offset: 0px;
+    outline: none;
+}
