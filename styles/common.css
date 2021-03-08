@@ -129,3 +129,73 @@ h5 {
 a {
     text-decoration: none;
 }
+
+@media only screen and (max-width:430px) {
+    header {
+        padding-top: 6px;
+    }
+    
+    .logo-title {
+        font-size: 33px;
+    }
+    
+    .subheading{
+        font-size: 14px;
+    }
+    
+    .top-buttons {
+        width: 80px;
+        border-width: 2px;
+        margin: 0 10px 0px 0;
+        padding: 8px;
+        font-size: 80%;
+    }
+}
+
+@media only screen and (max-width:357px) {
+    .logo-title {
+        font-size: 31px;
+    }
+    
+    .subheading{
+        font-size: 13px;
+    }
+    
+    .top-buttons {
+        width: 70px;
+        border-width: 2px;
+        margin: 0 6px 0px 0;
+        padding: 6px;
+    }
+}
+
+@media only screen and (max-width:305px) {
+    .logo-title {
+        font-size: 26px;
+    }
+    
+    .subheading{
+        font-size: 11px;
+    }
+    
+    .top-buttons {
+        width: 65px;
+        border-width: 2px;
+        font-size: 65%;
+    }
+}
+
+@media only screen and (max-width:318px) {
+    .logo-title {
+        font-size: 22px;
+    }
+    
+    .subheading{
+        font-size: 9px;
+    }
+    .top-buttons {
+        width: 55px;
+        border-width: 1px;
+        font-size: 55%;
+    }
+}

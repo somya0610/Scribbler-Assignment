@@ -10,3 +10,286 @@ body {
 .subheading {
     color: #7d09a0;
 }
+
+.posts {
+    margin: 1.5%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    width: 42%;
+    margin: 1.2% 3.4%;
+    border-radius: 2vh;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 1px 4px 6px 3px rgba(206, 172, 172, 0.7);
+}
+
+.card:hover {
+    box-shadow: 0 20px 60px 0 rgba(90, 89, 89, 0.3);
+}
+
+.post-by {
+    background-color: white;
+    color: #747171;
+    font-weight: bold;
+    border-top-left-radius: 2vh;
+    border-bottom-left-radius: 2vh;
+    width: 14%;
+    padding: 1.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 17px;
+}
+
+.post-details {
+    background-color:#ecebeb;
+    padding: 1.5%;
+    border-top-right-radius: 2vh;
+    border-bottom-right-radius: 2vh;
+}
+
+.post-header {
+    font-weight: 500;
+    color: grey;
+    padding: 0 2% 2% 2%;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-title {
+    padding-right: 2%;
+}
+
+.fa-trash:hover {
+    cursor: pointer;
+}
+
+.post-content {
+    font-weight: 300;
+    color: #222121;
+    overflow: hidden;
+    white-space: normal;
+    height: 53px;
+    padding: 0 2% 2% 2%;
+    margin-bottom: 2%;
+    font-size: 18px;
+}
+
+.post-ellipsis {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2%;
+    color: grey;
+    font-size: 20px;
+}
+
+.fa-ellipsis-h:hover {
+    cursor: pointer;
+}
+
+#delete-modal-content {
+    width: 23%;
+}
+
+#delete-p {
+    margin: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.div-delete-button {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    margin-top: 20px;
+}
+
+.delete-modal-button {
+    width: 85px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+}
+
+#delete-yes {
+    background-color: green;
+    opacity: 0.6;
+}
+
+#delete-no {
+    background-color: #c92626;
+    opacity: 0.9;
+}
+
+@media only screen and (max-width:1280px) {
+    .post-by {
+        width: 20%;
+        font-size: 16px;
+    }
+    .post-title {
+        font-size: 21px;
+    }
+    .post-content {
+        height: 53px;
+        font-size: 17px;
+    }
+    .post-ellipsis {
+        font-size: 19px;
+    }
+}
+
+@media only screen and (max-width:910px) {
+    .post-by {
+        width: 25%;
+    }
+    .post-content {
+        height: 54px;
+    }
+}
+
+@media only screen and (max-width:760px) {
+    .post-by {
+        width: 30%;
+        font-size: 15px;
+    }
+    .post-title {
+        font-size: 20px;
+    }
+    .post-content {
+        height: 53px;
+        font-size: 16px;
+    }
+    .post-ellipsis {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .post-by {
+        width: 35%;
+        font-size: 14px;
+    }
+    .post-title {
+        font-size: 20px;
+    }
+    .post-content {
+        height: 50px;
+        font-size: 15px;
+    }
+    .post-ellipsis {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width:540px) {
+    .posts {
+        margin-top: 3.5%;
+    }
+    .post-title {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width:470px) {
+    .post-by {
+        width: 40%;
+        font-size: 13px;
+    }
+    .post-title {
+        font-size: 15px;
+    }
+    .post-content {
+        height: 49px;
+        font-size: 14px;
+    }
+    .post-ellipsis {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width:370px) {
+    .posts {
+        margin-top: 4%;
+    }
+    .post-by {
+        width: 45%;
+        font-size: 12px;
+    }
+    .post-title {
+        font-size: 14px;
+    }
+    .post-content {
+        height: 45px;
+        font-size: 13px;
+    }
+    .post-ellipsis {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:330px) {
+    .post-by {
+        width: 45%;
+        font-size: 11px;
+    }
+    .post-title {
+        font-size: 13px;
+    }
+    .post-content {
+        height: 41px;
+        font-size: 12px;
+    }
+    .post-ellipsis {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .post-by {
+        width: 40%;
+        font-size: 10px;
+    }
+    .post-title {
+        font-size: 12px;
+    }
+    .post-content {
+        height: 35px;
+        font-size: 11px;
+    }
+    .post-ellipsis {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width:277px) {
+    .post-by {
+        width: 40%;
+        font-size: 9px;
+    }
+    .post-title {
+        font-size: 11px;
+    }
+    .post-content {
+        height: 33px;
+        font-size: 10px;
+    }
+    .post-ellipsis {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:250px) {
+    .post-by {
+        width: 40%;
+        font-size: 8px;
+    }
+}
