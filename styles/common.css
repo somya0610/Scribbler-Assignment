@@ -130,6 +130,14 @@ a {
     text-decoration: none;
 }
 
+.modal-content input:required {
+    box-shadow: none;
+}
+
+.modal-content input:invalid {
+    box-shadow: none;
+}
+
 @media only screen and (max-width:430px) {
     header {
         padding-top: 6px;
